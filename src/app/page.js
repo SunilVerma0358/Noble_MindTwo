@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About from "./components/About";
@@ -12,43 +12,21 @@ import HeaderSection from "./components/HeaderSection";
 import Preloader from "./components/Preloader";
 
 export default function Home() {
-    const [Loader, setLorder] = useState(false);
-    useEffect(() => {
-        setLorder(true);
-        setTimeout(() => {
-            setLorder(false);
-        }, 3500);
-    }, []);
-    useEffect(() => {
-        AOS.init({
-            duration: 1500,
-            once: true,
-        });
-    }, []);
-    return ( <
-        > { " " } {
-            Loader ? ( <
-                Preloader / >
-            ) : ( <
-                >
-                <
-                HeaderSection / >
-                <
-                About / >
-                <
-                Choose / >
-                <
-                Contact / >
-                <
-                Faqaccordion / >
-                <
-                FooterSection / >
-                <
-                BackToTop / >
-                <
-                />
-            )
-        } { " " } <
-        />
-    );
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      once: true,
+    });
+  }, []);
+  return (
+    <>
+      <HeaderSection />
+      <About />
+      <Choose />
+      <Contact />
+      <Faqaccordion />
+      <FooterSection />
+      <BackToTop /> <Preloader />
+    </>
+  );
 }

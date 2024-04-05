@@ -117,7 +117,7 @@ const Choose = () => {
             {ChooseMap.map((event, index) => (
               <div
                 key={index}
-                className="border border-[#A854E933] p-[18px] rounded-xl  transition-all duration-300 min-h-[213px] h-full "
+                className="border border-[#A854E933] p-3 sm:p-[18px] rounded-xl  transition-all duration-300 min-h-[213px] h-full "
               >
                 <div className="bg-white rounded-full p-[6px] border-[6px] border-[#A854E933] flex justify-center items-center font-outfit font-bold text-lg w-10 h-10 ">
                   <p className="block  textColor ">{event.number}</p>

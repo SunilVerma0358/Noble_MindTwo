@@ -74,7 +74,7 @@ const About = () => {
                 the vision of Noble Mind hints at a brighter, more efficient
                 nation.
               </p>
-              <Commonbtn aos="fade-down" common="Read More" />
+              <Commonbtn aos="fade-down" reflink="#" common="Read More" />
             </div>
           </div>
         </div>

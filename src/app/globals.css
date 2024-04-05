@@ -6,6 +6,10 @@
         scroll-behavior: smooth;
     }
     
+    .overflow_hidden {
+        overflow: hidden !important;
+    }
+    
     .LinearBlue {
         background: linear-gradient(130.88deg, #A854E9 -9.14%, #4F91FC 283.16%);
     }
@@ -22,7 +26,7 @@
     }
     
     .slick-list {
-        height: 250px;
+        height: 300px;
         padding-top: 12px !important;
         padding-bottom: 12px !important;
     }
@@ -59,10 +63,6 @@
     
     .bg_footerImg {
         background-image: url('../../public/assets/image/footerImg.webp');
-    }
-    
-    .inputm::placeholder {
-        color: #fdfddd;
     }
     
     .LinearBlue:hover {
@@ -133,15 +133,15 @@
         .overflow {
             overflow: hidden;
         }
-        .w-unset {
-            width: unset !important;
-        }
     }
     
     @media (min-width:640px) {
         .bg_img {
             background-image: url('../../public/assets/image/heroimg.webp');
             background-size: cover;
+        }
+        .slick-list {
+            height: 250px;
         }
     }
     

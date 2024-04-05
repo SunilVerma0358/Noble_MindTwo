@@ -24,6 +24,7 @@ const HeaderSection = () => {
                     src="/assets/image/iconImg.webp"
                     width="24"
                     height="24"
+                    alt="iconImg"
                   />
                 </span>
                 AI With Noble Mind

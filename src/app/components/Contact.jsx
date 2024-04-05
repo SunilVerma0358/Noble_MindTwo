@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
-import Commonbtn from "./common`/Commonbtn";
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     Name: "",
@@ -203,7 +203,9 @@ const Contact = () => {
               </div>
 
               <div data-aos="fade-down" className="pt-6 sm:pt-10 md:pt-12">
-                <Commonbtn type="button" common="Submit" />
+                <button className="font-outfit font-semibold text-sm sm:text-base leading-[150%] LinearBlue text-white p-[14px_24px] rounded">
+                  Submit
+                </button>
               </div>
             </form>
             {showSuccessPopup && (

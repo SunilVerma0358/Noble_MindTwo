@@ -20,6 +20,7 @@ const NobleNav = () => {
           src="/assets/image/Logo.webp"
           width={221}
           height={39}
+          alt="logo"
           className="w-full max-w-[221px] "
         />
       </a>
@@ -42,9 +43,7 @@ const NobleNav = () => {
               </li>
             ))}
             <li>
-              <a href="#">
-                <Commonbtn common="Contact Us" />
-              </a>
+              <Commonbtn reflink="#Services" common="Contact Us" />
             </li>
           </ul>
         </div>

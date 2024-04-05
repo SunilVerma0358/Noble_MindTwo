@@ -26,32 +26,32 @@ const FooterSection = () => {
             <p className="font-exo font-normal text-[14px] sm:text-base leading-[150%] text-[#fdfdff] pt-5 sm:pt-7">
               Follow Us
             </p>
-            <div className="flex items-center gap-4 pt-2">
+            <div className="flex items-center gap-2 lg:gap-4 pt-2">
               <a
                 href="htttps://www.facebook.com/radialcode/"
                 target="blank"
-                className="group w-11 h-11 rounded-full border hover:border-[#1877F2] duration-300 border-[#fdfdff] flex justify-center items-center"
+                className="group w-9 sm:w-11 h-9 sm:h-11 rounded-full border hover:border-[#1877F2] duration-300 border-[#fdfdff] flex justify-center items-center"
               >
                 <Facebook />
               </a>
               <a
                 href="https://twitter.com/i/flow/login?redirect_after_login=%2Fradialcode"
                 target="blank"
-                className="group duration-300 hover:border-[#FCAF45] w-11 h-11 rounded-full border border-[#fdfdff] flex justify-center items-center"
+                className="group duration-300 hover:border-[#FCAF45] w-9 sm:w-11 h-9 sm:h-11 rounded-full border border-[#fdfdff] flex justify-center items-center"
               >
                 <Intsa />
               </a>
               <a
                 href="https://www.instagram.com/radialcode/?hl=en"
                 target="blank"
-                className=" group w-11 h-11 rounded-full border border-[#fdfdff] hover:border-[#1DA1F2]  duration-300 flex justify-center items-center"
+                className=" group w-9 sm:w-11 h-9 sm:h-11 rounded-full border border-[#fdfdff] hover:border-[#1DA1F2]  duration-300 flex justify-center items-center"
               >
                 <Twiter />
               </a>
               <a
                 href="https://www.linkedin.com/company/radialcode/?originalSubdomain=in"
                 target="blank"
-                className=" group w-11 h-11 rounded-full border border-[#fdfdff] duration-300 hover:border-[#0077b5] flex justify-center items-center"
+                className=" group w-9 sm:w-11 h-9 sm:h-11 rounded-full border border-[#fdfdff] duration-300 hover:border-[#0077b5] flex justify-center items-center"
               >
                 <LinkDin />
               </a>

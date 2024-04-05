@@ -44,3 +44,35 @@ export const ChooseMap = [
       "Maintain the highest standards in all practices, ensuring our solutions are responsible, safe, and transparent.",
   },
 ];
+export const AccordionFaq = [
+  {
+    id: "1",
+    heading: " What is Artificial Intelligence (AI)?",
+    content:
+      " Artificial Intelligence refers to the development of computer systems that can perform tasks that typically require human intelligence. These tasks include learning, reasoning, problem-solving, perception, and language understanding.",
+  },
+  {
+    id: "2",
+    heading: " How does AI benefit our company?",
+    content:
+      " Artificial Intelligence refers to the development of computer systems that can perform tasks that typically require human intelligence. These tasks include learning, reasoning, problem-solving, perception, and language understanding.",
+  },
+  {
+    id: "3",
+    heading: " What types of AI technologies are relevant to our industry?",
+    content:
+      " Artificial Intelligence refers to the development of computer systems that can perform tasks that typically require human intelligence. These tasks include learning, reasoning, problem-solving, perception, and language understanding.",
+  },
+  {
+    id: "4",
+    heading: " How can our employees adapt to AI integration?",
+    content:
+      " Artificial Intelligence refers to the development of computer systems that can perform tasks that typically require human intelligence. These tasks include learning, reasoning, problem-solving, perception, and language understanding.",
+  },
+  {
+    id: "5",
+    heading: "How can our company ensure data security with AI?",
+    content:
+      " Artificial Intelligence refers to the development of computer systems that can perform tasks that typically require human intelligence. These tasks include learning, reasoning, problem-solving, perception, and language understanding.",
+  },
+];

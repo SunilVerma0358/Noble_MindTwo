@@ -1,6 +1,7 @@
 export const Facebook = () => {
   return (
     <svg
+      className="w-5 sm:w-6"
       width="24"
       height="24"
       viewBox="0 0 24 24"
@@ -18,6 +19,7 @@ export const Facebook = () => {
 export const Intsa = () => {
   return (
     <svg
+      className="w-4 sm:w-5"
       width="20"
       height="20"
       viewBox="0 0 20 20"
@@ -35,7 +37,7 @@ export const Intsa = () => {
 export const Twiter = () => {
   return (
     <svg
-      className="group duration-300"
+      className="group duration-300 w-5 sm:w-6"
       width="24"
       height="24"
       viewBox="0 0 24 24"
@@ -53,6 +55,7 @@ export const Twiter = () => {
 export const LinkDin = () => {
   return (
     <svg
+      className="w-4 sm:w-5"
       width="20"
       height="18"
       viewBox="0 0 20 18"

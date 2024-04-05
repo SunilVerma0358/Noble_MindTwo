@@ -6,6 +6,7 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
+import { AccordionFaq } from "./common`/Helper";
 function Icon({ id, open }) {
   return (
     <div className="relative ">
@@ -28,8 +29,8 @@ function Icon({ id, open }) {
   );
 }
 const Faqaccordion = () => {
-  const [open, setOpen] = React.useState(1);
-  const handleOpen = (value) => setOpen(open === value ? 0 : value);
+  const [open, setOpen] = React.useState(0);
+  const handleOpen = (value) => setOpen(open === value ? "" : value);
 
   return (
     <div id="faq" className="relative z-1 ">
@@ -77,118 +78,28 @@ const Faqaccordion = () => {
           </span>
         </p>
         <div className="max-w-[774px] 2xl:max-w-[900px] pt-6 sm:pt-10 md:pt-12 mx-auto">
-          <Accordion
-            className={`border border-[#EBDAF8] py-4 px-5 sm:px-7 sm:py-6 mb-3 sm:mb-6 bg-white rounded-xl transition-all duration-300 overflow-hidden ${
-              open === 1 ? "shadow-[0_5px_#A854E9]" : ""
-            }`}
-            open={open === 1}
-            icon={<Icon id={1} open={open} />}
-          >
-            <AccordionHeader
-              onClick={() => handleOpen(1)}
-              className={`font-outfit font-medium text-sm sm:text-base leading-[150%] py-0 text-start text-[#4D4D4D]  transition-all duration-300 ${
-                open === 1 ? "text-[#131200]" : ""
-              } `}
+          {AccordionFaq.map((event, id) => (
+            <Accordion
+              key={id}
+              className={`border border-[#EBDAF8] py-4 px-5 sm:px-7 sm:py-6 mb-3 sm:mb-6 bg-white rounded-xl transition-all duration-300 overflow-hidden ${
+                open === id ? "shadow-[0_5px_#A854E9] border-[#A854E9] " : ""
+              }`}
+              open={open === id}
+              icon={<Icon id={id} open={open} />}
             >
-              What is Artificial Intelligence (AI)?
-            </AccordionHeader>
-            <AccordionBody className="font-exo font-normal text-sm sm:text-base leading-[150%] text-[#131200] opacity-70 max-w-[880px] pt-2 pb-0 ">
-              Artificial Intelligence refers to the development of computer
-              systems that can perform tasks that typically require human
-              intelligence. These tasks include learning, reasoning,
-              problem-solving, perception, and language understanding.
-            </AccordionBody>
-          </Accordion>
-          <Accordion
-            className={`border border-[#EBDAF8] py-4 px-5 sm:py-6 sm:px-7 mb-3 sm:mb-6 bg-white rounded-xl transition-all duration-300 overflow-hidden ${
-              open === 2 ? "shadow-[0_5px_#A854E9] border-[#A854E9] " : ""
-            }`}
-            open={open === 2}
-            icon={<Icon id={2} open={open} />}
-          >
-            <AccordionHeader
-              onClick={() => handleOpen(2)}
-              className={`font-outfit font-medium text-sm sm:text-base leading-[150%] py-0 text-start text-[#4D4D4D]  transition-all duration-300 ${
-                open === 2 ? "text-[#131200]" : ""
-              } `}
-            >
-              {" "}
-              How does AI benefit our company?
-            </AccordionHeader>
-            <AccordionBody className="font-exo font-normal text-sm sm:text-base leading-[150%] text-[#131200] opacity-70 max-w-[880px] pt-2 pb-0 ">
-              Artificial Intelligence refers to the development of computer
-              systems that can perform tasks that typically require human
-              intelligence. These tasks include learning, reasoning,
-              problem-solving, perception, and language understanding.
-            </AccordionBody>
-          </Accordion>
-          <Accordion
-            className={`border border-[#EBDAF8] py-4 px-5 sm:py-6 sm:px-7 mb-3 sm:mb-6 bg-white rounded-xl transition-all duration-300 overflow-hidden ${
-              open === 3 ? "shadow-[0_5px_#A854E9] border-[#A854E9]" : ""
-            }`}
-            open={open === 3}
-            icon={<Icon id={3} open={open} />}
-          >
-            <AccordionHeader
-              onClick={() => handleOpen(3)}
-              className={`font-outfit font-medium text-sm sm:text-base leading-[150%] py-0 text-start text-[#4D4D4D]  transition-all duration-300 ${
-                open === 3 ? "text-[#131200]" : ""
-              } `}
-            >
-              {" "}
-              What types of AI technologies are relevant to our industry?{" "}
-            </AccordionHeader>
-            <AccordionBody className="font-exo font-normal text-sm sm:text-base leading-[150%] text-[#131200] opacity-70 max-w-[880px] pt-2 pb-0 ">
-              Artificial Intelligence refers to the development of computer
-              systems that can perform tasks that typically require human
-              intelligence. These tasks include learning, reasoning,
-              problem-solving, perception, and language understanding.
-            </AccordionBody>
-          </Accordion>
-          <Accordion
-            className={`border border-[#EBDAF8] py-4 px-5 sm:py-6 sm:px-7 mb-3 sm:mb-6 bg-white rounded-xl transition-all duration-300 overflow-hidden ${
-              open === 4 ? "hover:shadow-[0_5px_#A854E9] border-[#A854E9]" : ""
-            }`}
-            open={open === 4}
-            icon={<Icon id={4} open={open} />}
-          >
-            <AccordionHeader
-              onClick={() => handleOpen(4)}
-              className={`font-outfit font-medium text-sm sm:text-base leading-[150%] py-0 text-start text-[#4D4D4D]  transition-all duration-300 ${
-                open === 4 ? "text-[#131200]" : ""
-              } `}
-            >
-              How can our employees adapt to AI integration?{" "}
-            </AccordionHeader>
-            <AccordionBody className="font-exo font-normal text-sm sm:text-base leading-[150%] text-[#131200] opacity-70 max-w-[880px] pt-2 pb-0 ">
-              Artificial Intelligence refers to the development of computer
-              systems that can perform tasks that typically require human
-              intelligence. These tasks include learning, reasoning,
-              problem-solving, perception, and language understanding.
-            </AccordionBody>
-          </Accordion>
-          <Accordion
-            className={`border border-[#EBDAF8] py-4 px-5 sm:py-6 sm:px-7 mb-3 sm:mb-6 bg-white rounded-xl transition-all duration-300 overflow-hidden ${
-              open === 5 ? "hover:shadow-[0_5px_#A854E9] border-[#A854E9]" : ""
-            }`}
-            open={open === 5}
-            icon={<Icon id={5} open={open} />}
-          >
-            <AccordionHeader
-              onClick={() => handleOpen(5)}
-              className={`font-outfit font-medium text-sm sm:text-base leading-[150%] py-0 text-start text-[#4D4D4D]  transition-all duration-300 ${
-                open === 5 ? "text-[#131200]" : ""
-              } `}
-            >
-              How can our company ensure data security with AI?{" "}
-            </AccordionHeader>
-            <AccordionBody className="font-exo font-normal text-sm sm:text-base leading-[150%] text-[#131200] opacity-70 max-w-[880px] pt-2 pb-0 ">
-              Artificial Intelligence refers to the development of computer
-              systems that can perform tasks that typically require human
-              intelligence. These tasks include learning, reasoning,
-              problem-solving, perception, and language understanding.
-            </AccordionBody>
-          </Accordion>
+              <AccordionHeader
+                onClick={() => handleOpen(id)}
+                className={`font-outfit font-medium text-sm sm:text-base leading-[150%] py-0 text-start text-[#4D4D4D]  transition-all duration-300 ${
+                  open === id ? "text-[#131200]" : ""
+                } `}
+              >
+                {event.heading}
+              </AccordionHeader>
+              <AccordionBody className="font-exo font-normal text-sm sm:text-base leading-[150%] text-[#131200] opacity-70 max-w-[880px] pt-2 pb-0 ">
+                {event.content}
+              </AccordionBody>
+            </Accordion>
+          ))}
         </div>
         <div className="bg_transform bg-no-repeat bg-cover bg-center sm:mt-12 text-center rounded-3xl py-6 sm:py-12 md:py-[60px] px-3 translate-y-20 ">
           <h2
@@ -210,7 +121,7 @@ const Faqaccordion = () => {
             <input
               type="text"
               placeholder="Enter your email"
-              className="outline-none text-[#fdfdff] font-semibold font-outfit leading-[150%] text-base  bg-transparent inputm w-full"
+              className="outline-none text-[#fdfdff] font-semibold font-outfit leading-[150%] text-base  bg-transparent inputm w-full placeholder:font-outfit placeholder:font-semibold placeholder:text-[#fdfdff]"
             />
             <button className="border border-[#fdfdff] text-[#fdfdff] p-[10px_18px] sm:p-[14px_24px] font-semibold font-outfit leading-[150%] text-base rounded-md hover:bg-[#fdfdff] hover:text-[#A37fe0] transition-all duration-300 ">
               Subscribe
