@@ -1,33 +1,152 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+    * {
+        scroll-behavior: smooth;
+    }
+    
+    .LinearBlue {
+        background: linear-gradient(130.88deg, #A854E9 -9.14%, #4F91FC 283.16%);
+    }
+    
+    .textColor {
+        background: linear-gradient(130.88deg, #A854E9 -9.14%, #4F91FC 283.16%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    
+    .slick-slide {
+        margin-right: 12px !important;
+        margin-left: 12px !important;
+    }
+    
+    .slick-list {
+        height: 250px;
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+    }
+    
+    .slick-dots li.slick-active button:before {
+        background-color: #A854E9;
+        border-radius: 12px !important;
+        opacity: 100 !important;
+        width: 28px !important;
+        height: 8px !important;
+        position: absolute !important;
+        left: -10px !important;
+    }
+    
+    .slick-dots li button:before {
+        width: 8px !important;
+        height: 8px !important;
+        border-radius: 8px;
+        content: '' !important;
+        text-align: center;
+        background-color: #A854E933;
+        opacity: 100% !important;
+    }
+    
+    .slick-center {
+        box-shadow: 0px 6px #A854E9;
+        border-radius: 24px;
+        border: 1px solid #A854E9;
+    }
+    
+    .bg_transform {
+        background-image: url('../../public/assets/image/newsletterImg.webp');
+    }
+    
+    .bg_footerImg {
+        background-image: url('../../public/assets/image/footerImg.webp');
+    }
+    
+    .inputm::placeholder {
+        color: #fdfddd;
+    }
+    
+    .LinearBlue:hover {
+        animation: pulse 1s linear;
+        box-shadow: 0 0 0 0.7em transparent;
+    }
+    
+    .loader {
+        animation: rotate 3.5s linear infinite;
+    }
+    
+    @keyframes rotate {
+        30% {
+            transform: rotate(220deg);
+        }
+        40% {
+            transform: rotate(450deg);
+            opacity: 1;
+        }
+        75% {
+            transform: rotate(720deg);
+            opacity: 1;
+        }
+        76% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+            transform: rotate(0deg);
+        }
+    }
+    
+    .loader:nth-child(1) {
+        animation-delay: 0.15s;
+    }
+    
+    .loader:nth-child(2) {
+        animation-delay: 0.3s;
+    }
+    
+    .loader:nth-child(3) {
+        animation-delay: 0.45s;
+    }
+    
+    .loader:nth-child(4) {
+        animation-delay: 0.6s;
+    }
+    
+    .loader:nth-child(5) {
+        animation-delay: 0.75s;
+    }
+    
+    .loader:nth-child(6) {
+        animation-delay: 0.9s;
+    }
+    
+    .bg_size {
+        background-color: 100% 100%;
+    }
+    
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 #A854E9;
+        }
+    }
+    
+    @media (max-width:1024px) {
+        .overflow {
+            overflow: hidden;
+        }
+        .w-unset {
+            width: unset !important;
+        }
+    }
+    
+    @media (min-width:640px) {
+        .bg_img {
+            background-image: url('../../public/assets/image/heroimg.webp');
+            background-size: cover;
+        }
+    }
+    
+    @media (min-width:767px) {
+        .bg_size {
+            background-size: 100% 100%;
+        }
+    }
