@@ -229,7 +229,7 @@ const Contact = () => {
                 src="/assets/image/ContactUsImg.webp"
                 width={598}
                 height={572}
-                alt="contact us"
+                alt="contactus"
                 className="w-full rounded-xl "
               />
             </div>
