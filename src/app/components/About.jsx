@@ -4,7 +4,7 @@ import Commonbtn from "./common`/Commonbtn";
 
 const About = () => {
   return (
-    <div id="About" className=" relative z-1 pt-6 lg:pt-12">
+    <div id="About" className=" relative z-1 pt-6 lg:pt-12 overflow-hidden">
       <div className=" absolute top-0 left-[5%]">
         <Image
           src="/assets/image/positionimg.webp"

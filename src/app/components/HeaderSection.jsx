@@ -6,7 +6,7 @@ const HeaderSection = () => {
   return (
     <div
       id="Home"
-      className="min-h-[810px] lg:h-screen flex flex-col bg_img bg-no-repeat bg-center bg_size "
+      className="min-h-[810px] lg:h-screen flex flex-col bg_img bg-no-repeat bg-center bg_size overflow-hidden "
     >
       <div>
         <NobleNav />
@@ -49,13 +49,13 @@ const HeaderSection = () => {
                 Vision 2030.”
               </p>
             </div>
-            <div className="w-full block sm:hidden">
+            <div className="max-w-[500px] px-3 block sm:hidden">
               <Image
                 src="/assets/image/HeroImgSmall.webp"
                 width={500}
                 height={300}
                 alt="heromain"
-                className="w-full min-h-[300px]"
+                className="w-full max-w-[500px] min-h-[300px] object-cover"
               />
             </div>
           </div>

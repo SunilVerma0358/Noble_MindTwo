@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/pagination";
 import "swiper/css";
 
@@ -51,10 +51,12 @@ const Choose = () => {
         </h2>
         <div className=" mt-6 md:mt-12">
           <Swiper
-            modules={[Pagination]}
+            modules={[Pagination, Autoplay]}
             spaceBetween={24}
             slidesPerView={1}
             loop={true}
+            autoplay={{ delay: 30000 }}
+            speed={200}
             centeredSlides={true}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
