@@ -81,7 +81,7 @@ const Faqaccordion = () => {
           {AccordionFaq.map((event, id) => (
             <Accordion
               key={id}
-              className={`border border-[#EBDAF8] py-4 px-5 sm:px-7 sm:py-6 mb-3 sm:mb-6 bg-white rounded-xl transition-all duration-300 overflow-hidden ${
+              className={`border border-[#EBDAF8] py-4 px-5 sm:px-7 sm:py-6 mb-3 sm:mb-6 bg-white rounded-xl transition-all duration-300 shadow-[0_4px_32px_0_#00000014] overflow-hidden ${
                 open === id ? "shadow-[0_5px_#A854E9] border-[#A854E9] " : ""
               }`}
               open={open === id}
